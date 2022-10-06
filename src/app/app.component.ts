@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chat-gui';
+
+  /*
+  Estructura de Método
+
+  getName():void{
+    console.log('Hola Bola.')
+  }
+  */
+
 }
