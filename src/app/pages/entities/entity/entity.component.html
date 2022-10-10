@@ -1,1 +1,13 @@
-<p>entity works!</p>
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>
+            {{entity.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        {{entity.description}}</mat-card-content>
+    <mat-card-actions>Actions</mat-card-actions>
+    <button mat-flat-button color="primary">
+        Buy {{entity.price | currency}}
+        <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+</mat-card>

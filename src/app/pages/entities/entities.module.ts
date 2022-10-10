@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { EntitiesRoutingModule } from './entities-routing.module';
 import { EntitiesComponent } from './entities.component';
+import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { EntitiesComponent } from './entities.component';
   ],
   imports: [
     CommonModule,
-    EntitiesRoutingModule
+    EntitiesRoutingModule,
+    MaterialModule
   ]
 })
 export class EntitiesModule { }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Entity } from '../interfaces/entity.interface';
 
 @Component({
   selector: 'app-entity',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntityComponent implements OnInit {
 
+  @Input() entity!: Entity;
   constructor() { }
 
   ngOnInit(): void {
