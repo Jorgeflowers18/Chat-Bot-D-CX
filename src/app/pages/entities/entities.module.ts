@@ -13,7 +13,8 @@ import { MaterialModule } from 'src/app/material.module';
   imports: [
     CommonModule,
     EntitiesRoutingModule,
-    MaterialModule
+    MaterialModule,
+    EntitiesModule
   ]
 })
 export class EntitiesModule { }
