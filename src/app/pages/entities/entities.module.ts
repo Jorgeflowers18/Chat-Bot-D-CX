@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { EntitiesRoutingModule } from './entities-routing.module';
 import { EntitiesComponent } from './entities.component';
-import { MaterialModule } from 'src/app/material.module';
+import { MaterialModule } from 'app/material.module';
 
 
 @NgModule({

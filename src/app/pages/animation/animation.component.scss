@@ -17,7 +17,7 @@
   border-radius: 100%;
   overflow: hidden;
   margin: 0 auto;
-  background: #95b3bf;
+  background: #ffc403;
   position: relative;
   -webkit-mask-image: -webkit-radial-gradient(#bada55, #bada55);
   -moz-mask-image: -webkit-radial-gradient(#bada55, #bada55);
@@ -59,7 +59,7 @@
   width: 285px;
   height: 600px;
   margin: 0 auto;
-  background: #222;
+  background: rgb(49, 53, 160);
   border-radius: 100px;
   position: relative;
   top: 200px;
@@ -75,7 +75,7 @@
   width: 196px;
   height: 260px;
   border-radius: 50px;
-  background: #ffe4be;
+  background: #f6dfbe;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -100,7 +100,7 @@
 .hair-main {
   width: 220px;
   height: 0px;
-  background: #e7ab57;
+  background: #4d402c;
   border-radius: 54px 54px 0px 0px;
   margin-left: -12px;
   margin-top: -10px;
@@ -117,7 +117,7 @@
   height: 70px;
   opacity: 0;
   border-top-right-radius: 30px;
-  background: #e7ab57;
+  background: #4d402c;
   position: relative;
   top: -17px;
   left: 50%;
@@ -136,7 +136,7 @@
   height: 50px;
   opacity: 0;
   border-bottom-left-radius: 25px;
-  background: #e7ab57;
+  background: #4d402c;
   position: relative;
   top: -20px;
   left: 50%;
@@ -153,7 +153,7 @@
 .sideburn {
   width: 8px;
   height: 25px;
-  background: #e7ab57;
+  background: #584932;
   position: absolute;
   bottom: -25px;
   opacity: 0;
@@ -175,7 +175,7 @@
   width: 180px;
   height: 0px;
   border-radius: 48px 48px 0 0;
-  background: #ffe4be;
+  background: #f6dfbe;
   position: absolute;
   top: 40px;
   left: 8px;
@@ -185,11 +185,11 @@
   -webkit-animation-fill-mode: forwards;
   z-index: 3;
 }
-.nose {
+.nose-2{
   width: 20px;
   height: 45px;
   opacity: 1;
-  background: #ffe4be;
+  background: #f5dbb7;
   border-top-left-radius: 20px;
   position: absolute;
   left: 50%;
@@ -202,10 +202,34 @@
   opacity: 0;
   z-index: 5;
 }
+
+.nose{
+  width: 5px;
+  height: 45px;
+  opacity: 1;
+  margin-left: 80px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  z-index: 1;
+  background: #e1c7a3;
+  transform: rotate(25deg);
+  position: fixed;
+}
+
+.nose-1{
+  width: 25px;
+  height: 5px;
+  background: #e1c7a3;
+  z-index: 1;
+  margin-left: 74px;
+  margin-top: 63px;
+  position: fixed;
+}
+
 .ear {
   width: 24px;
   height: 35px;
-  background: #ffe4be;
+  background: #f6dfbe;
   border-radius: 12px;
   position: absolute;
   top: 116px;
@@ -221,13 +245,13 @@
   height: 33px;
   border-radius: 0 0 33px 33px;
   background: white;
-  position: absolute;
-  top: 150px;
+  position: relative;
+  top: 100px;
   left: 50%;
   margin-left: -33px;
   animation: grow 0.7s 2.6s 1 ease;
   animation-fill-mode: forwards;
-  -webkit-animation: grow 0.7s 2.6s 1 ease;
+  -webkit-animation: grow 0s 2.6s 1 ease;
   -webkit-animation-fill-mode: forwards;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -238,12 +262,12 @@
   height: 40px;
   border-radius: 0 0 5px 5px;
   background: white;
-  position: absolute;
-  top: 150px;
+  position: relative;
+  top: 100px;
   left: 50%;
   margin-left: -13px;
   /*animation: reverse 1s 5s 1s;*/
-  -webkit-animation: grow 0s 1s 1 ease;
+  -webkit-animation: grow 3s 1s 1 ease;
   -webkit-animation-fill-mode: forwards;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -254,28 +278,40 @@
   height: 27px;
   border-radius: 0 0 0px 15px;
   background: white;
-  position: absolute;
-  top: 150px;
+  position: relative;
+  top: 100px;
   left: 50%;
   margin-left: -33px;
   /*animation: reverse 1s 5s 1s;*/
-  -webkit-animation: grow 0s 1s 1 ease;
+  -webkit-animation: grow 3s 0s 1 ease;
   -webkit-animation-fill-mode: forwards;
   -webkit-transform: scale(0);
   transform: scale(0);
+  
 }
+/*
+animation: boca ease-in .2s;
+@keyframes boca [
+  0% [
+
+  ],
+  25% [
+
+  ]
+
+]*/
 
 .mouth-move-3 {
   width: 42px;
   height: 15px;
   border-radius: 6px 6px 6px 6px;
   background: white;
-  position: absolute;
-  top: 150px;
+  position: relative;
+  top: 100px;
   left: 50%;
   margin-left: -33px;
   /*animation: reverse 1s 5s 1s;*/
-  -webkit-animation: grow 0s 1s 1 ease;
+  -webkit-animation: grow 3s 1s 1 ease;
   -webkit-animation-fill-mode: forwards;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -286,11 +322,11 @@
   border-radius: 20px 20px 20px 20px;
   background: white;
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 50%;
   margin-left: -33px;
   /*animation: reverse 1s 5s 1s;*/
-  -webkit-animation: grow 0s 1s 1 ease;
+  -webkit-animation: grow 3s 1s 1 ease;
   -webkit-animation-fill-mode: forwards;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -326,7 +362,7 @@
 .eyebrow {
   width: 40px;
   height: 10px;
-  background: #e7ab57;
+  background: #3b2b18;
   position: absolute;
   top: -35px;
   left: 50%;
@@ -377,12 +413,14 @@
 }
 .shadow {
   width: 98px;
-  height: 260px;
-  border-radius: 50px;
-  background: rgba(149, 36, 0, 0.1);
-  position: absolute;
-  z-index: 4;
-  opacity: 0;
+  height: 218px;
+  border-radius: 50px 50px 50px 0px;
+  margin-left: 100px;
+  background: rgba(193, 47, 3, 0.055);
+  position: fixed;
+  margin-top: 39px;
+  z-index: 3;
+  opacity: 0.1;
   animation: shadow-anim 1s 2.8s 1 ease;
   animation-fill-mode: forwards;
   -webkit-animation: shadow-anim 1s 2.8s 1 ease;
@@ -417,6 +455,8 @@
   -webkit-transform: translate(-200px, 0px);
   transform: translate(-200px, 0px);
 }
+
+/*
 .music-note {
   position: absolute;
   font-size: 150px;
@@ -441,6 +481,7 @@
   -webkit-animation: note-anim 2s 4.3s infinite ease;
   -webkit-animation-fill-mode: forwards;
 }
+*/
 .shirt-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;

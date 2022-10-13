@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { ChatbotComponent } from './pages/chatbot/chatbot.components';
 import { EntityComponent } from './pages/entities/entity/entity.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { SpeechtotextComponent } from './pages/speechtotext/speechtotext.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 
