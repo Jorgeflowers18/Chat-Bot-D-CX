@@ -3,7 +3,7 @@ import { Component, OnInit } from "@angular/core";
 @Component({
     selector:'app-chatbot',
     templateUrl: './chatbot.components.html',
-    styleUrls: ['./chatbot.component.scss']
+    styleUrls: ['./chatbot.components.scss']
     
 })
 

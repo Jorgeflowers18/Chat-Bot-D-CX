@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serverAPI": "json-server --watch server/db.json --port  3000"
+    "serverAPI": "json-server --watch server/db.json --port  3000",
+    "nombre-del-script": "ng-packagr -p projects/nommbre-librería/ng-package.json"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^14.2.5",
     "@angular/router": "^14.2.5",
     "angular-routing": "^0.3.1",
+    "angular-speech-to-text": "^1.0.13",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -37,6 +39,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^14.2.1",
     "typescript": "~4.7.2"
   }
 }
