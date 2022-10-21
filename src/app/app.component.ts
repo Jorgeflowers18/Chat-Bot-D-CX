@@ -9,6 +9,8 @@ import {
 } from '@angular/animations';
 //import { VoiceRecognitionService } from './service/voice-recognition.service';
 
+
+
 declare const annyang: any;
 @Component({
   selector: 'app-root',
@@ -18,5 +20,6 @@ declare const annyang: any;
 })
 export class AppComponent {
   title = 'chat-gui';
+  constructor(){}
   
 }

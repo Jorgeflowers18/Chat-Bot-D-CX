@@ -29,8 +29,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-            
-            ]
+              "src/assets/js/annyang.min.js",
+              "src/assets/js/script.js"]
           },
           "configurations": {
             "production": {
