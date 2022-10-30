@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TimerCmpComponent } from './components/timer-cmp/timer-cmp.component';
 import { DynCmpComponent } from './components/dyn-cmp/dyn-cmp.component';
 import { SpeechCallsComponent } from './components/speech-calls/speech-calls.component';
+import { BotapiComponent } from './botapi/botapi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimerCmpComponent,
     DynCmpComponent,
-    SpeechCallsComponent
+    SpeechCallsComponent,
+    BotapiComponent
   ],
   entryComponents:[
     TimerCmpComponent

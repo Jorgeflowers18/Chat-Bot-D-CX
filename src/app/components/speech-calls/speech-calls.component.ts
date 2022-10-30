@@ -10,6 +10,7 @@ export class SpeechCallsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('Funciona el oninit')
   }
 
 }

@@ -1,7 +1,8 @@
 import { Component, NgZone, OnInit, } from '@angular/core';
+import { TimerCmpComponent } from './components/timer-cmp/timer-cmp.component';
 
 declare var annyang: any;
-declare var formComponent: any;
+declare var formComponent: TimerCmpComponent;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +11,8 @@ declare var formComponent: any;
 export class AppComponent implements OnInit{
   constructor() {}
   ngOnInit(){
-	this.initializeVoiceRecognitionCallback()
+	this.initializeVoiceRecognitionCallback();
+	formComponent.ngOnInit()
   }
   initializeVoiceRecognitionCallback(): void {
 	annyang.setLanguage("es-EC");

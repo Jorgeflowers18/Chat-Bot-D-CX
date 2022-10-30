@@ -1,11 +1,4 @@
-import {
-  Component,
-  ComponentFactoryResolver,
-  ComponentRef,
-  OnInit,
-  ViewChild,
-  ViewContainerRef,
-} from '@angular/core';
+import {Component, ComponentRef, OnInit, ViewChild, ViewContainerRef,} from '@angular/core';
 import { TimerService } from 'src/app/services/timer.service';
 import { DynCmpComponent } from '../dyn-cmp/dyn-cmp.component';
 declare var formComponent: any;
@@ -17,17 +10,11 @@ declare var formComponent: any;
 })
 export class TimerCmpComponent implements OnInit {
   time: string | undefined;
-  
-  // decorador para leer ViewContainer con cada función
-  @ViewChild('messageContainer', {
-    read: ViewContainerRef,
-  })
   // Conteneder de acciones de vista de componente
   alertContainer!: ViewContainerRef;
   // Contenedor del componente
   componentRef!: ComponentRef<DynCmpComponent>;
   // Status del componente
-  
   status!: string;
   constructor(
     private timerService: TimerService,
@@ -38,7 +25,7 @@ export class TimerCmpComponent implements OnInit {
   ngOnInit(): void {
     this.timerService.timer.subscribe((data) => {
       this.time = data;
-      formComponent = TimerCmpComponent;
+      // formComponent = TimerCmpComponent;
     });
   }
   /**
