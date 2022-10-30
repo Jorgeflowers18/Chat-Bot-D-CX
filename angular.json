@@ -3,11 +3,14 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "chat-gui": {
+    "speech-to-text": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
         }
       },
       "root": "",
@@ -17,15 +20,17 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/chat-gui",
+            "outputPath": "dist/speech-to-text",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": [
@@ -69,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "chat-gui:build:production"
+              "browserTarget": "speech-to-text:build:production"
             },
             "development": {
-              "browserTarget": "chat-gui:build:development"
+              "browserTarget": "speech-to-text:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "chat-gui:build"
+            "browserTarget": "speech-to-text:build"
           }
         },
         "test": {
@@ -91,49 +96,21 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": [
               "src/assets/js/annyang.min.js",
-              "src/assets/js/animation-moves.js"
+              "src/assets/js/script.js"
             ]
           }
         }
       }
-    },
-    "speech-to-text": {
-      "projectType": "library",
-      "root": "projects/speech-to-text",
-      "sourceRoot": "projects/speech-to-text/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/speech-to-text/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/speech-to-text/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/speech-to-text/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/speech-to-text/src/test.ts",
-            "tsConfig": "projects/speech-to-text/tsconfig.spec.json",
-            "karmaConfig": "projects/speech-to-text/karma.conf.js"
-          }
-        }
-      }
     }
-  }
+  },
+  "defaultProject": "speech-to-text"
 }

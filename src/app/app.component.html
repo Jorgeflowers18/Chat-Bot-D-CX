@@ -1,32 +1,31 @@
-<div class="container">
-  <app-header></app-header>
-  <!--<app-speechtotext></app-speechtotext>-->
-  <router-outlet></router-outlet>
-  <!--<input type="text" [(ngModel)]='title' />-->
-  
+<!--<div *ngIf="voiceActiveSectionDisabled; else voicesection;">
+  <button type="button" (click)="startVoiceRecognition()">Record</button>
 </div>
-<main role="main" class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <h1>Comandos de voz en la web con JavaScript y Annyang</h1>
-      <a href="//parzibyte.me/blog" target="_blank">By Parzibyte</a>
-      <p>
-        <strong>Intenta con:</strong>
-      </p>
-    </div>
-    <div class="col-6">
-      <h2>Comandos reconocidos</h2>
-      
-      <div class="alert alert-success">
-        <p id="comandosReconocidos"></p>
-      </div>
-      
-    </div>
-    <div class="col-6">
-      <h2>Voz escuchada, sin reconocer</h2>
-      <div class="alert alert-info">
-        <p id="vozDetectada"></p>
-      </div>
-    </div>
+<ng-template #voicesection>
+  <ng-container *ngIf="!voiceActiveSectionError; else failure">
+    <ng-container *ngIf="voiceText; else start">
+        <span>{{voiceText}}</span>
+    </ng-container>
+    <ng-template #start>
+      <ng-container
+        *ngIf="voiceActiveSectionListening; else beginning">
+        <span>Listening...</span>
+      </ng-container>
+      <ng-template #beginning>
+        <span>Start talking...</span>
+      </ng-template>
+    </ng-template>
+  </ng-container>
+  <ng-template #failure>
+    <span>Didn't catch that</span>
+  </ng-template>
+  <div>
+    <button (click)="closeVoiceRecognition()">Close</button>
+    <button (click)="startVoiceRecognition()">Restart</button>
   </div>
-</main>
+</ng-template>
+-->
+<div>
+<app-timer-cmp></app-timer-cmp>
+</div>
+<app-speech-calls></app-speech-calls>

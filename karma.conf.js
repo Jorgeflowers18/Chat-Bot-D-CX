@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/chat-gui'),
+      dir: require('path').join(__dirname, './coverage/speech-to-text'),
       subdir: '.',
       reporters: [
         { type: 'html' },

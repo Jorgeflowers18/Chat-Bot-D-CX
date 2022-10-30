@@ -1,0 +1,12 @@
+<p>timer-cmp works!</p>
+<h1>Time is {{ time }}</h1>
+<div>
+  <!--Creación de componentes, y mensajes entre componentes-->
+  <h3 class="title">Creación y Destrucción de componentes</h3>
+  <button (click)="createCmp('activate')">Activar ChatBot</button>
+  <button (click)="createCmp('deactivate')">Test</button>
+  <button (click)="destroyCmp()">Desactivar ChatBot</button>
+  <app-dyn-cmp [cmp_status]="status">
+    <!-- <ng-template dynamicChildLoader=""></ng-template> -->
+  </app-dyn-cmp>
+</div>

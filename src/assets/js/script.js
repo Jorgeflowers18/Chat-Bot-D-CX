@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    
     if (!annyang) {
         return alert("Lo siento, tu navegador no soporta el reconocimiento de voz :(");
     }
@@ -14,10 +15,23 @@ document.addEventListener("DOMContentLoaded", function() {
         $vozDetectada.innerHTML += contenido + "<br>";
     };
 
-    annyang.setLanguage("es-US");
+    annyang.setLanguage("es-EC");
+    // const commands = {'hello :name': helloFunction, 'howdy': helloFunction};
     let comandos = {
+
+        "chati":()=> {
+            
+            
+            annyang.removeCommands(["Hola", "Helo", "Ola", "Ayudame con algo"]);
+        },
+
+        "Hola Chati":() =>{
+
+        },
+
         "hola": () => {
             loguearComandoReconocido(`Hola mundo!`);
+
 
         },
         "reporte de ventas de *mes": mes => {
@@ -40,6 +54,11 @@ document.addEventListener("DOMContentLoaded", function() {
     annyang.addCallback("result", frases => {
         loguearVozDetectada(`<strong>Probablemente has dicho: </strong> <br> ${frases.join("<br>")}`);
     });
+    
 
-    annyang.start();
+
+    //annyang.start();
+
+
+    
 });
