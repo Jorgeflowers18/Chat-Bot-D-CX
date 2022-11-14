@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { TimerCmpComponent } from './components/timer-cmp/timer-cmp.component';
 import { DynCmpComponent } from './components/dyn-cmp/dyn-cmp.component';
 import { SpeechCallsComponent } from './components/speech-calls/speech-calls.component';
-import { BotapiComponent } from './botapi/botapi.component';
+import { BotApiComponent } from './components/bot-api/bot-api.component';
+import { ApiDcxService } from './services/api-dcx.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { BotapiComponent } from './botapi/botapi.component';
     TimerCmpComponent,
     DynCmpComponent,
     SpeechCallsComponent,
-    BotapiComponent
+    BotApiComponent
   ],
   entryComponents:[
     TimerCmpComponent
@@ -23,7 +24,7 @@ import { BotapiComponent } from './botapi/botapi.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ApiDcxService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -14,5 +14,7 @@ import {
 })
 export class DynCmpComponent {
   @Input() cmp_status!: string
-  constructor(){}
+  constructor(){
+    console.log(this.cmp_status)
+  }
 }

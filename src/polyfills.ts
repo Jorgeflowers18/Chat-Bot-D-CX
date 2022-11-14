@@ -46,7 +46,11 @@
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js';  // Included with Angular CLI.
-
+// module.exports ={
+//     resolve:{
+//         fallback: { "stream": require.resolve("stream-browserify") }
+//     }
+// }
 
 /***************************************************************************************************
  * APPLICATION IMPORTS

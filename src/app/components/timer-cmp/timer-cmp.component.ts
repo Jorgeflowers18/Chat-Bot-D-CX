@@ -53,15 +53,11 @@ export class TimerCmpComponent implements OnInit {
   }
   public destroyCmp(): void {
     // DEstrucción del componente dinámico
-    //this.status = 'off' 
+    this.status = 'off' 
     this.viewContainer.remove();
     alert('component' + ' ' + 'destroy successfully');
     
   }
 
-  public waitBot(wait: number){
-    let response = 200
-    this.viewContainer.remove();
-    return response
-  }
+  
 }
