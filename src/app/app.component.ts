@@ -20,6 +20,10 @@ declare const annyang: any;
 })
 export class AppComponent {
   title = 'chat-gui';
+  EventTarget(){
+
+  }
+  
   constructor(){}
   
 }

@@ -12,6 +12,7 @@ import { EntityComponent } from './pages/entities/entity/entity.component';
 import { HttpClientModule} from '@angular/common/http';
 import { SpeechtotextComponent } from './pages/speechtotext/speechtotext.component';
 import { AnimationComponent } from './pages/animation/animation.component';
+import { EntitiesComponent } from './pages/entities/entities.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AnimationComponent } from './pages/animation/animation.component';
     HeaderComponent,
     ChatbotComponent,
     EntityComponent,
+    EntitiesComponent,
     SpeechtotextComponent,
     AnimationComponent
   ],
