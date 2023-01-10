@@ -4,11 +4,14 @@ import { CommonModule } from '@angular/common';
 import { EntitiesRoutingModule } from './entities-routing.module';
 import { EntitiesComponent } from './entities.component';
 import { MaterialModule } from 'app/material.module';
+// import { MessagesComponent } from './message/messages.component';
+import { MessageComponent } from './message/message.component';
 
 
 @NgModule({
   declarations: [
-    EntitiesComponent
+    EntitiesComponent,
+    MessageComponent
   ],
   imports: [
     CommonModule,

@@ -32,7 +32,15 @@
           <div class="eyebrow"></div>
           <div class="eye"></div>
         </div>
-        <div [@myAnimationTrigger]="myStatusExp" class="mouth"></div>
+        
+        <div  class="mouth" [@openClose]="isOpen ? 'open' : 'closed'">
+          <!--  
+          <div   class="open-close-container">
+            <p>Mouth: {{ isOpen ? 'Open' : 'Closed' }}!</p>
+          </div>
+          <button type="button" (click)="toggle()"> Toggle Open/Close </button>  -->
+          
+        </div>
         <div class="shadow-wrapper">
           <div class="shadow"></div>
         </div>

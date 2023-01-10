@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Entity } from '../interfaces/entity.interface';
+import { IntEntity } from '../interfaces/entity.interface';
+import { OpenaiResponse } from '../interfaces/openaiResponse.interface';
 
 @Component({
   selector: 'app-entity',
@@ -8,7 +9,8 @@ import { Entity } from '../interfaces/entity.interface';
 })
 export class EntityComponent implements OnInit {
 
-  @Input() entity!: Entity;
+  @Input() entity!: IntEntity; 
+  @Input() openai_response!: OpenaiResponse;
   constructor() { }
 
   ngOnInit(): void {
